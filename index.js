@@ -1,6 +1,6 @@
 //VISUALIZE TABLE
 document.addEventListener('DOMContentLoaded', function () {
-    fetch('https://i8fokyclsg.execute-api.eu-central-1.amazonaws.com/books').then(onResponse).then(onJSON);
+    fetch('YOUR_API_URL/books').then(onResponse).then(onJSON); //insert your url
 }, false);
 
 function onResponse(response) {
@@ -108,7 +108,7 @@ function submitFunction(event) {
     const formJSON = Object.fromEntries(data.entries());
     const json = JSON.stringify(formJSON);
 
-    const url = "https://i8fokyclsg.execute-api.eu-central-1.amazonaws.com/books";
+    const url = "YOUR_URL/books"; //INSERT YOUR URL
 //PUT FETCHING
     var putMethod = {
         method: 'PUT',
@@ -129,7 +129,7 @@ function submitFunction(event) {
 //DELETE Function
 function deleteBook(event) {
     
-    const url = 'https://i8fokyclsg.execute-api.eu-central-1.amazonaws.com/books/'+event.currentTarget.name;
+    const url = 'YOUR_URL/books/'+event.currentTarget.name; //insert your url
     var delMethod = {
         method: 'DELETE'
     }
@@ -150,7 +150,7 @@ function updateBook(event){
     const formJSON = Object.fromEntries(data.entries());
     const json = JSON.stringify(formJSON);
    
-    const url = "https://i8fokyclsg.execute-api.eu-central-1.amazonaws.com/books";
+    const url = "YOUR_URL/books"; //insert your url
 //PUT FETCHING
     var putMethod = {
         method: 'PUT',
