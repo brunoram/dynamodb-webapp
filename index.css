@@ -1,0 +1,194 @@
+html,
+body {
+height:100%;
+}
+
+p, h1{
+    text-align: left;
+    color:whitesmoke;
+    margin-left:5%;
+
+}
+
+body {
+	
+	background: linear-gradient(45deg, #49a09d, #5f2c82);
+	font-family: sans-serif;
+	font-weight: 100;
+}
+
+.container {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+    
+}
+
+table {
+	width: 800px;
+	border-collapse: collapse;
+	overflow: hidden;
+	box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+
+th,
+td {
+	padding: 15px;
+	background-color: rgba(255,255,255,0.2);
+	color: #fff;
+}
+
+th {
+	text-align: left;
+}
+
+thead {
+	th {
+		background-color: #55608f;
+	}
+}
+
+tbody {
+	tr {
+		&:hover {
+			background-color: rgba(255,255,255,0.3);
+		}
+	}
+	td {
+		position: relative;
+		/*&:hover {
+			&:before {
+				content: "";
+				position: absolute;
+				left: 0;
+				right: 0;
+				top: -9999px;
+				bottom: -9999px;
+				background-color: rgba(255,255,255,0.2);
+				z-index: -1;
+			}
+		}*/
+	}
+}
+
+.hidden{
+    display: none;
+}
+
+.btn_delete{
+	box-shadow:inset 0px 1px 0px 0px #f5978e;
+	background:linear-gradient(to bottom, #f24537 5%, #c62d1f 100%);
+	background-color:#f24537;
+	border-radius:6px;
+	border:1px solid #d02718;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #810e05;
+	
+}
+.btn_delete:hover {
+	background:linear-gradient(to bottom, #c62d1f 5%, #f24537 100%);
+	background-color:#c62d1f;
+}
+.btn_delete:active {
+	position:relative;
+	top:1px;
+}
+
+.btn_update{
+	box-shadow:inset 0px 1px 0px 0px #a4e271;
+	background:linear-gradient(to bottom, #89c403 5%, #77a809 100%);
+	background-color:#89c403;
+	border-radius:6px;
+	border:1px solid #74b807;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #528009;
+	
+}
+
+.btn_update:hover {
+	background:linear-gradient(to bottom, #77a809 5%, #89c403 100%);
+	background-color:#77a809;
+}
+.btn_update:active {
+	position:relative;
+	top:1px;
+}
+
+
+#flex-buttons{
+    display:flex;
+    justify-content: center;
+
+}
+
+.fbuttons {
+	box-shadow:inset 0px 1px 0px 0px #ffffff;
+	background:linear-gradient(to bottom, #ffffff 5%, #f6f6f6 100%);
+	background-color:#ffffff;
+	border-radius:6px;
+	border:1px solid #dcdcdc;
+	display:inline-block;
+	cursor:pointer;
+	color:#666666;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffffff;
+    margin-top:4%;
+}
+.fbuttons:hover {
+	background:linear-gradient(to bottom, #f6f6f6 5%, #ffffff 100%);
+	background-color:#f6f6f6;
+}
+.fbuttons:active {
+	position:relative;
+	top:1px;
+}
+
+form{
+    margin-top: 15%;
+}
+#frm{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    justify-content: center;
+    padding-left: 33%
+}
+
+label{
+    color:whitesmoke;
+    font-weight:600;
+    padding-bottom: 2%
+}
+
+input{
+	background-color: rgba(255,255,255, 0.4)
+}
+
+#submit{
+    margin:10%;
+}
+/*
+    Table CSS Template from CodePen 
+    Pure CSS Table Highlight (vertical & horizontal)
+    Alexander Erlandsson 
+    modified by Bruno Rametta for this project
+*/

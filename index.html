@@ -1,0 +1,45 @@
+<html>
+<script src="index.js" defer="true"></script>
+<link rel="stylesheet" type="text/css" href="index.css">
+<header>
+  <meta charset="UTF-8">
+  <title>Books table</title>
+</header>
+
+<body>
+  <h1>Books table</h1>
+  <p>Made by B. Rametta</p>
+  <div class="container">
+    <table id="table"></table>
+    <div id="flex-buttons">
+    <button class="fbuttons" onclick="addBook()">Add a new book</button>
+    
+   
+  </div>
+
+
+
+    <form id="form" class="hidden" name="form">
+      <div id="frm">
+        <label for="category">Category: </label>
+        <input type="text" name="category" id="category">
+        <label for="id">Id: </label>
+        <input type="text" name="id" id="id">
+        <label for="pages">Pages: </label>
+        <input type="number" name="pages" id="pages">
+        <label for="title">Title: </label>
+        <input type="text" name="title" id="title">
+        <label for="author">Author: </label>
+        <input type="text" name="author" id="author">
+        <input type='submit' class="fbuttons" id="submit" value="Insert">
+      </div>
+    </form>
+
+  </div>
+
+
+
+
+</body>
+
+</html>
